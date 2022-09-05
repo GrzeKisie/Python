@@ -1,7 +1,7 @@
-with open("plik tekstowy.txt", "r", encoding = "UTF - 8") as file:
-    lista = []   
+with open("a file.txt", "r", encoding = "UTF - 8") as file:
+    words = []   
     for element in file:
         if "d" in element:
-            lista.append(element)
-with open("plik tekstowy1.txt", "w", encoding = "UTF - 8") as file:
-    file.write(str(lista))
+            words.append(element)
+with open("a file1.txt", "w", encoding = "UTF - 8") as file:
+    file.write(str(words))
