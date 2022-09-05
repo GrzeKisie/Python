@@ -1,0 +1,7 @@
+with open("plik tekstowy.txt", "r", encoding = "UTF - 8") as file:
+    lista = []   
+    for element in file:
+        if "d" in element:
+            lista.append(element)
+with open("plik tekstowy1.txt", "w", encoding = "UTF - 8") as file:
+    file.write(str(lista))
