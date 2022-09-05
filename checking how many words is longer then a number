@@ -1,0 +1,18 @@
+text1 = str(text)
+wordLength = 6
+
+listofWords = text1.split(" ")
+print(listofWords)
+
+print(len(listofWords[0]))
+
+x = 0
+wordslist = []
+
+while x < len(listofWords):
+    
+    if len(listofWords[x]) > wordLength:
+        wordslist.append(listofWords[x])
+    
+    x+=1
+print(len(wordslist))
