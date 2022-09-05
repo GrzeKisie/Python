@@ -1,56 +1,56 @@
-print("Witaj w swiecie liczb i kalkulacji")
+print("Welcome")
 
 while True:
-    kod = int(input("Podaj komende by wiedziec jakie dzialanie mam wykonac:\n1 - dodawanie,\n2 - odejmowanie,\n3 - mnozenie\n4 - dzielenie: "))
+    code = int(input("Provide a comment code:\n1 - adding,\n2 - excluding,\n3 - times\n4 - division: "))
 
-    #def dodawania:
+    #def adding:
 
-    def dodawanie (a, b):
+    def adding (a, b):
         return a+b
 
-    #def odejmowanie:
+    #def excluding:
 
-    def odejmowanie (a, b):
+    def excluding (a, b):
         return a-b
 
-    #def mnozenie:
+    #def times:
 
-    def mnozenie (a, b):
+    def times (a, b):
         return a*b
 
-    #def dzielenie:
+    #def division:
 
-    def dzielenie (a, b):
+    def division (a, b):
         return a/b
 
-    if kod == 1:
-        a = int(input("Podaj pierwsza liczbe: \n"))
-        b = int(input("Podaj pierwsza liczbe: \n"))
+    if code == 1:
+        a = int(input("Provide first number: \n"))
+        b = int(input("Provide second number: \n"))
         print()
-        dodawanie (a, b)
-        print("Wynik to: ", dodawanie (a, b))
+        adding (a, b)
+        print("Resultes is: ", adding (a, b))
         print()
-    elif kod == 2:
-        a = int(input("Podaj pierwsza liczbe: \n"))
-        b = int(input("Podaj pierwsza liczbe: \n"))
+    elif code == 2:
+        a = int(input("Provide first number: \n"))
+        b = int(input("Provide second number: \n"))
         print()
-        odejmowanie (a, b)
-        print("Wynik to: ", odejmowanie (a, b))
+        excluding (a, b)
+        print("Wynik to: ", excluding (a, b))
         print()
-    elif kod == 3:
-        a = int(input("Podaj pierwsza liczbe: \n"))
-        b = int(input("Podaj pierwsza liczbe: \n"))
+    elif code == 3:
+        a = int(input("Provide first number: \n"))
+        b = int(input("Provide second number: \n"))
         print()
-        mnozenie (a, b)
-        print("Wynik to: ", mnozenie (a, b))
+        times (a, b)
+        print("Wynik to: ", times (a, b))
         print()
-    elif kod == 4:
-        a = int(input("Podaj pierwsza liczbe: \n"))
-        b = int(input("Podaj pierwsza liczbe: \n"))
+    elif code == 4:
+        a = int(input("Provide first number: \n"))
+        b = int(input("Provide second number: \n"))
         print()
         if b == 0:
-            print("Podaj inna liczbe niz 0")
+            print("Provide number different than 0")
             continue
-        dzielenie (a, b)
-        print("Wynik to: ", dzielenie (a, b))
+        division (a, b)
+        print("Resultes is: ", division (a, b))
         print()
