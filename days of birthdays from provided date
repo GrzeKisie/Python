@@ -1,0 +1,18 @@
+dzien = int(input("Podaj dzien urodzin: "))
+miesiac = int(input("Podaj miesiac urodzin: "))
+rok = int(input("Podaj rok urodzin: "))
+liczbaLatUrodzin = int(input("Podaja liczbe lat dla ktorych chcesz poznac dni tygodnia swoich urodzin: "))
+
+dataUrodzin = datetime.date(year = rok, month = miesiac, day = dzien)
+
+for i in range (liczbaLatUrodzin):
+    dzien = dzien
+    miesiac = miesiac
+    rok = rok + 1
+    dataUrodzin = datetime.date(year = rok, month = miesiac, day = dzien)
+    if dataUrodzin < datetime.date.today():
+        print("W roku",rok,"Twoje urodziny byly w", dataUrodzin.strftime('%A'))
+    elif dataUrodzin > datetime.date.today():
+        print("W roku",rok,"Twoje urodziny beda w", dataUrodzin.strftime('%A'))
+
+
